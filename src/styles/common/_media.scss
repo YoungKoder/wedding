@@ -1,16 +1,16 @@
 @media screen and (min-width:1200px){
     .wrapper{
-        width:1140px;
+        max-width:1200px;
     }
 }
 @media screen and (min-width:992px) and (max-width:1200px){
     .wrapper{
-        width:960px;
+        max-width:960px;
     }
 }
 @media screen and (min-width:768px) and (max-width:992px){
     .wrapper{
-        width:720px;
+        max-width:720px;
     }
     .navbar_collapse{
         width: 100%;
@@ -29,12 +29,12 @@
 }
 @media screen and (min-width:576px) and (max-width:768px){
     .wrapper{
-        width:540px;
+        max-width:540px;
     }
 }
 @media screen and (min-width:300px) and (max-width:576px){
     .wrapper{
-        width:auto;
+        max-width:auto;
     }
 }
 @media screen and (min-width:300px) and (max-width:992px){
