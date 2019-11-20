@@ -20,21 +20,21 @@ gulp.task('style', function () {
         }))
         .pipe(gulp.dest('./'));
 });
-gulp.task('scripts:lib',function(){
-    return gulp.src(['node_modules/jquery-custom/jquery.2/dist/jquery.min.js',
-    'node_modules/slick-carousel/slick/slick.min.js'])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./src/js/libs'));
-});
+
+// gulp.task('scripts:lib',function(){
+//     return gulp.src(['node_modules/jquery-custom/jquery.2/dist/jquery.min.js',
+//     'node_modules/slick-carousel/slick/slick.min.js'])
+//     .pipe(concat('libs.min.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('./src/js/libs'));
+// });
 
 gulp.task('scripts',function(){
-    return gulp.src(['./src/js/libs/libs.min.js','./src/js/main.js'])
-    .pipe(concat('script.min.js'))
+    return gulp.src('./src/js/main.js')
     .pipe(uglify({
         toplevel: true
     }))
-    .pipe(gulp.dest('./build/js'))
+    .pipe(gulp.dest('./build/js/'))
     
 });
 
