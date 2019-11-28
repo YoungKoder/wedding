@@ -82,6 +82,7 @@ button{
     &_nav{
         display: flex;
         justify-content: center;
+        
         li{
             @include font(14px,400,"Roboto");
             margin-right: 30px;
@@ -127,28 +128,39 @@ button{
         padding:73px 77px 80px 0px;
         &_title{
             @include font(72px,600,"Montserrat");
+            animation-duration:1.5s;
         }
         &_location{
             margin:16px 0 40px 0;
             display: block;
             @include font(24px,500,"Montserrat");
+            // animation:fadeIn 1s linear 1.7s;
+            animation:fadeIn 3s;
+            // animation-duration:1s;
+            // animation-delay: 1.7s;
         }
         &_text{
             @include font(16px,400,"Montserrat");
+           
             line-height: 24px;
             margin-bottom:45px;
+            animation:fadeIn 3s;
+            // animation-duration:1s;
+            // animation-delay: 1.7s;
         }
         &_btnStart{
             max-width: 161px;
             box-sizing:border-box;
             border:1px solid $interactive;
             color:$interactive;
+            animation:fadeIn 3.7s;
         }
     }
     &_imgWrap{
         position:relative;
         width: 65%;
         overflow: hidden;
+        animation-duration:2s;
     }
     &_img{
         position:absolute;
@@ -205,6 +217,9 @@ button{
         }
     }
 }
+.slick-track{
+    display:flex;
+}
 .variable-width{
     .slick-slide{
         width:370px;
@@ -224,10 +239,19 @@ button{
         &_offer{
             text-align:center;
             margin-top:54px;
-            i{
-                color:#FF699F;
-                font-size: 130px;
+            
+            .icon_wrapper{
+                &:hover{
+                    transform:rotateY(180deg);
+                }
+                transition:all .5s linear;
+                
+                i{
+                    color:#FF699F;
+                    font-size: 130px;
+                }
             }
+            
             span{
                 display: block;
                 @include font(20px,400,"Motserrat");
