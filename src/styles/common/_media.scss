@@ -36,6 +36,7 @@
     .wrapper{
         max-width:auto;
     }
+    
 }
 @media screen and (min-width:300px) and (max-width:992px){
     .navbar_logo{
@@ -120,6 +121,20 @@
     .services{
         &_article{
             width:auto;
+        }
+    }
+    .offers_allOffers {
+        div{
+            &:nth-child(5){
+                padding:5px 0;
+            }
+        }
+        &_offer{
+            .icon_wrapper{
+                i{
+                    font-size: 100px;
+                }
+            }
         }
     }
 }
