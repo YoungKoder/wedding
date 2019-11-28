@@ -43,6 +43,8 @@ button{
 }
 .navbar{
     display:flex;
+    position:relative;
+    z-index:10;
     justify-content:space-between;
     align-items:center;
     width:100%;

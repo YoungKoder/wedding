@@ -43,20 +43,26 @@
     }
     .navbar_collapse{
         width: 100%;
+        // position: absolute;
         flex-direction:column;
         padding-left:17px;
         margin-bottom:20px;
         transform: translateY(-800px);
-        height:0px;
         transition:.5s all;
         &--active{
             display:flex;
-            transform: translateY(0px);
-            height: 428px;
+            background: $white;
+            transform: translateY(200px);
+            position:relative;
         }
     }
     .navbar_nav{
         flex-direction:column;
+        background:$white;
+        position:absolute;
+        left:0;
+        right: 0;
+        padding-bottom: 50px;
         li{
             a{
                 &::before{
@@ -67,7 +73,10 @@
     }
     .wrap_btnStart{
         display:flex;
-        padding-left:0px;
+        position: absolute; 
+        top:156px;
+        margin-left:-15px;
+        padding-left: 0px;
     }
     .navbar_btnStart{
         width:116px;
