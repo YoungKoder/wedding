@@ -41,7 +41,7 @@ var toglBtn = document.querySelector(".navbar_togler"),
     $( document ).ready(function(){
         $('.variable-width').slick({
             arrows:false,
-            dots:false,
+            dots:true,
             infinite: false,
             speed: 300,
             slidesToShow: 3,

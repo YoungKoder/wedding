@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="fonts/css/style.css"> -->
+    <style>
+        @charset "UTF-8";@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}a,article,body,div,figure,h1,h2,header,html,img,li,nav,p,section,span,ul{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}:focus{outline:0}article,figure,header,nav,section{display:block}body{line-height:1}ul{list-style:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}button{font-size:100%;margin:0;vertical-align:baseline}button{line-height:normal}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}button,html{color:#222}img{vertical-align:middle}a{display:block;color:#000;text-decoration:none}button{background:0 0;border:none}.wrapper{margin:0 auto}.navbar{display:-ms-flexbox;display:flex;position:relative;z-index:10;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;width:100%;-ms-flex-wrap:wrap;flex-wrap:wrap}.navbar_collapse{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center}.navbar_togler{width:50px;height:50px}.navbar_togler span{display:none;width:25px;height:2px;background:#000;position:relative}.navbar_togler span:after,.navbar_togler span:before{content:"";display:block;position:absolute;left:0;width:25px;height:2px;background:#000}.navbar_togler span:before{top:-7px}.navbar_togler span:after{bottom:-7px}.navbar_nav{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center}.navbar_nav li{font-size:14px;font-weight:400;font-family:Roboto;margin-right:30px}.navbar_nav li a{padding:25px 0;position:relative}.navbar_nav li a::before{content:"";display:block;position:absolute;bottom:20px;left:50%;width:0;background:#000;height:2px;-ms-transform:translateX(-50%);transform:translateX(-50%)}.navbar_logo{font-size:18px;font-weight:600;font-family:Montserrat}.navbar_btnStart{border:2px solid #000;font-weight:600}.btnStart{padding-top:10px;padding-bottom:10px;padding-left:35px;padding-right:35px;border-radius:3px}.firstScreen{display:-ms-flexbox;display:flex;margin-bottom:100px}.firstScreen_description{width:35%;padding:73px 77px 80px 0}.firstScreen_description_title{font-size:72px;font-weight:600;font-family:Montserrat;animation-duration:1.5s}.firstScreen_description_location{margin:16px 0 40px 0;display:block;font-size:24px;font-weight:500;font-family:Montserrat;opacity:0;animation:fadeIn 1s .3s forwards}.firstScreen_description_text{font-size:16px;font-weight:400;font-family:Montserrat;line-height:24px;margin-bottom:45px;opacity:0;animation:fadeIn 1s .65s forwards}.firstScreen_description_btnStart{max-width:161px;box-sizing:border-box;border:1px solid #ff699f;opacity:0;color:#ff699f;animation:fadeIn 1s 1s forwards}.firstScreen_imgWrap{position:relative;width:65%;overflow:hidden;animation-duration:2s}.firstScreen_img{position:absolute;right:0;top:0}.services{padding:0;line-height:153.4%}.services_article{width:668px;margin-bottom:35px}.services_title{margin-bottom:24px;font-size:36px;font-weight:600;font-family:Montserrat}.services_article p{font-size:16px;font-weight:400;font-family:Montserrat}@media screen and (min-width:1200px){.wrapper{max-width:1200px}}@media screen and (min-width:992px) and (max-width:1200px){.wrapper{max-width:960px}}@media screen and (min-width:768px) and (max-width:992px){.wrapper{max-width:720px}.navbar_collapse{width:100%;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:center;align-items:center;padding-left:17px}.navbar_nav{-ms-flex-direction:column;flex-direction:column;-ms-flex-align:center;align-items:center}.wrap_btnStart{-ms-flex-pack:center;justify-content:center}}@media screen and (min-width:576px) and (max-width:768px){.wrapper{max-width:540px}}@media screen and (min-width:300px) and (max-width:576px){.wrapper{max-width:auto}}@media screen and (min-width:300px) and (max-width:992px){.navbar_logo{padding:20px 0}.navbar_collapse{width:100%;-ms-flex-direction:column;flex-direction:column;padding-left:17px;margin-bottom:20px;-ms-transform:translateY(-800px);transform:translateY(-800px)}.navbar_nav{-ms-flex-direction:column;flex-direction:column;background:#fff;position:absolute;left:0;right:0;padding-bottom:50px}.navbar_nav li a::before{background:0 0}.wrap_btnStart{display:-ms-flexbox;display:flex;position:absolute;top:156px;margin-left:-15px;padding-left:0}.navbar_btnStart{width:116px;box-sizing:border-box}.navbar_togler span{display:block}.firstScreen{-ms-flex-direction:row-reverse;flex-direction:row-reverse;-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse;-ms-flex-pack:start;justify-content:flex-start}.firstScreen_description{width:100%}.firstScreen_imgWrap{width:100%;height:500px}.firstScreen_img{top:-50px}.services_article{width:auto}}
+    </style>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"></noscript>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navbar fadeIn"> 
+                <a href="#" class="navbar_logo">Wedding Dance</a>
+                <button class="navbar_togler">
+                    <span></span>
+                </button>
+                <div class="navbar_collapse">
+                    <ul class="navbar_nav">
+                        <li><a href="#">Homework</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our Coaches</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Lesson Review</a></li> 
+                    </ul> 
+                    <button class="wrap_btnStart">
+                        <a href="#" class="navbar_btnStart btnStart">Start</a>
+                    </button>  
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="firstScreen">
+                <div class="firstScreen_description">
+                    <h1 class="firstScreen_description_title fadeIn"> Wedding Dance Lessons</h1>
+                    <span class="firstScreen_description_location ">New Jersey</span>
+                    <p class="firstScreen_description_text fadeIn">
+                        The wedding dance is one of the most important dances in 
+                        your life. You look perfect and the whole audience is looking 
+                        at you. Also, it becomes the favorite moment you like to play 
+                        on videos and photos. Feel the moment
+                    </p>
+                    <a class="firstScreen_description_btnStart btnStart" href="#">Let’s start</a>
+                </div>
+                <figure class="firstScreen_imgWrap fadeIn">
+                    <img src="src/assets/img/mainImg.jpg" class="firstScreen_img" alt="main_img">
+                </figure>     
+            </section>
+            <section class="services">
+                <article class="services_article">
+                    <h2 class="services_title">Our Services</h2>
+                    <p>We want to make your wedding day perfect that 
+                        is why suggest a lot of options for dance: not 
+                        only for a bride and groom but for their friends 
+                        and relatives
+                    </p>
+                </article>
+                <div class="services_cards variable-width">
+                    <div class="services_card">
+                        <div class="services_card_imgWrap">
+                            <img src="src/assets/img/firstInRow.jpg" alt="firstOffer">
+                        </div>
+                        <h3 class="services_card_title">For Bride and Groom</h3>
+                        <div class="services_card_moreInfo">
+                            <span>First Dance</span>
+                            <span>Parent & Child Dance</span>
+                        </div>
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_imgWrap">
+                            <img src="src/assets/img/secondInRow.jpg" alt="firstOffer">
+                        </div>
+                        <h3 class="services_card_title">For Guests</h3>
+                        <div class="services_card_moreInfo">
+                            <span>Groomsmen Dance</span>
+                            <span>Parent Dance</span>
+                            <span>Children’s Dance</span> 
+                        </div>
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_imgWrap">
+                            <img src="src/assets/img/thirdInRow.jpg" alt="firstOffer">
+                        </div>
+                        <h3 class="services_card_title">Other events</h3>
+                        <div class="services_card_moreInfo">
+                            <span>Bridal Party Dance</span>
+                            <span>Anniversary Dance</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="offers">
+                    <article class="services_article offers_article">
+                        <h2 class="services_title offers_title">What we offer</h2>
+                        <p>Our goal is not only to teach you how to dance 
+                            but also give the best unforgettable memories about 
+                            preparing to your event
+                        </p>
+                    </article>
+                    <div class="offers_allOffers">
+                        <div class="offers_allOffers_offer">
+                            <div class="icon_wrapper">
+                                <i class="icon icon-coaches"></i>
+                            </div>
+                            <span>Talented coaches</span>
+                        </div>
+                        <div class="offers_allOffers_offer">
+                            <div class="icon_wrapper">
+                                <i class="icon icon-rooms"></i>
+                            </div>
+                            <span>Cozy rooms for training</span>
+                        </div>
+                        <div class="offers_allOffers_offer">
+                            <div class="icon_wrapper">
+                                <i class="icon icon-cofee"></i>
+                            </div>
+                            <span>Cofee tea and cookies</span>
+                        </div>
+                        <div class="offers_allOffers_offer">
+                            <div class="icon_wrapper">
+                                <i class="icon icon-goodShape"></i>
+                            </div>
+                            <span>Good physical form</span>
+                        </div>
+                        <div class="tool_brakeRow"></div>
+                        <div class="offers_allOffers_offer">
+                            <div class="icon_wrapper">
+                                <i class="icon icon-star"></i>
+                            </div>
+                            <span> Self Confidence and success on your event</span>
+                        </div>
+                        <div class="offers_allOffers_offer">
+                            <div class="icon_wrapper">
+                                <i class="icon icon-funMemories"></i>
+                            </div>
+                            <span>Exciting emotions and a lot of fun</span>
+                        </div>
+                        <div class="offers_allOffers_offer">
+                            <div class="icon_wrapper">
+                                <i class="icon icon-photos"></i>
+                            </div>
+                            <span>Great photos from your event</span>
+                        </div>
+                        <div class="offers_allOffers_offer">
+                            <div class="icon_wrapper bounceOut">
+                                <i class="icon icon-happiness"></i>
+                            </div>
+                            <span>Spend hours together in happiness</span>
+                        </div>
+                    </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer ">
+            <a href="#" class="header_logo footer_logo"> Wedding Dance </a> 
+            <span>Copyright © 2019</span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="src/js/libs/slick.min.js"></script>
+    <script src="build/js/main.js"></script>
+</body>
+</html>
