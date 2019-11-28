@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     iconfont    =   require('gulp-iconfont'),
     uglify = require('gulp-uglify'),
+    critical = require('critical'),
     iconfontCss =   require('gulp-iconfont-css');
 
 
@@ -21,13 +22,17 @@ gulp.task('style', function () {
         .pipe(gulp.dest('./'));
 });
 
-// gulp.task('scripts:lib',function(){
-//     return gulp.src(['node_modules/jquery-custom/jquery.2/dist/jquery.min.js',
-//     'node_modules/slick-carousel/slick/slick.min.js'])
-//     .pipe(concat('libs.min.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('./src/js/libs'));
-// });
+
+gulp.task('critical',function(){
+    critical.generate({
+        inline: true,
+        base: './',
+        src: 'index.html',
+        dest: 'index-critical.html',
+        width: 1300,
+        height: 900
+    })
+});
 
 gulp.task('scripts',function(){
     return gulp.src('./src/js/main.js')
